@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sdf_models</name>
+  <version>1.0.0</version>
+  <description>
+    A collection of SDF models for Gazebo
+  </description>
+
+  <license>Apache License 2.0</license>
+
+  <maintainer email="g.rezendesilva@tudelft.nl">Rezenders</maintainer>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
+  </export>
+</package>
